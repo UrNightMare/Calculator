@@ -17,9 +17,59 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	isNewEnter = YES;
 }
 
+- (IBAction)digitPushedBy:(id) sender {
+        if (isNewEnter) {
+        self.textField.text = @"" ;
+        isNewEnter = NO;
+    }
+    NSString* CurrentnumberAsString = [NSString stringWithFormat:@"%i", [sender tag]];
+    NSString* currentValue = self.textField.text;
+    currentValue = [currentValue stringByAppendingString:CurrentnumberAsString];
+    self.textField.text = currentValue;
+}
+- (IBAction)pointPushed:(id)sender {
+    NSRange range = [self.textField.text rangeOfString:@"."];
+    if (range.location != NSNotFound) {
+        return;
+    }
+    self.textField.text = [self.textField.text stringByAppendingString:@"."];
+}
+
+- (IBAction)clearPushed:(id)sender {
+    self.textField.text = @"";
+    isNewEnter = YES;
+    lastSign = 0;
+    lastValue = 0;
+}
+- (IBAction)signPushed:(id)sender {
+    if (isNewEnter && lastSign != 0) {
+        return;
+    }
+    
+    double currentValue = [self.textField.text doubleValue];
+    
+    if (lastSign == 1001)  {
+    currentValue = currentValue+lastValue;
+    }
+    if (lastSign == 1002) {
+    currentValue = currentValue-lastValue;
+    }
+    if (lastSign == 1003) {
+    currentValue = currentValue*lastValue;
+    }
+    if (lastSign == 1004 && currentValue != 0) {
+    currentValue = currentValue/lastValue;
+    }
+    
+    lastValue = currentValue;
+    lastSign = [sender tag];
+    isNewEnter = YES;
+    
+    self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

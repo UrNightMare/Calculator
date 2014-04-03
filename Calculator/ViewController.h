@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    BOOL isNewEnter;
+    double lastValue;
+    NSInteger lastSign;
+    
+    
+    
+}
+@property (nonatomic, strong) IBOutlet UITextField* textField;
+-(IBAction)digitPushedBy:(id) sender;
 
 @end
