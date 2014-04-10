@@ -55,13 +55,16 @@
     currentValue = currentValue+lastValue;
     }
     if (lastSign == 1002) {
-    currentValue = currentValue-lastValue;
+    currentValue = lastValue-currentValue;
     }
     if (lastSign == 1003) {
     currentValue = currentValue*lastValue;
     }
     if (lastSign == 1004 && currentValue != 0) {
-    currentValue = currentValue/lastValue;
+    currentValue =lastValue/currentValue;
+    }
+    if (lastSign == 1010) {
+    currentValue = sqrt(currentValue);
     }
     
     lastValue = currentValue;
