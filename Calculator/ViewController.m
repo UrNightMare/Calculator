@@ -26,12 +26,12 @@
         isNewEnter = NO;
         }
     
-    
     NSString* CurrentnumberAsString = [NSString stringWithFormat:@"%li", (long)[sender tag]];
     NSString* currentValue = self.textField.text;
     currentValue = [currentValue stringByAppendingString:CurrentnumberAsString];
     self.textField.text = currentValue;
 }
+
 - (IBAction)pointPushed:(id)sender {
     NSRange range = [self.textField.text rangeOfString:@"."];
     if (range.location != NSNotFound) {
@@ -46,6 +46,30 @@
     lastSign = 0;
     lastValue = 0;
 
+}
+-(IBAction)sqrtPushed:(id)sender {
+    double currentValue = [self.textField.text doubleValue];
+    
+    currentValue = sqrt(currentValue);
+    
+    
+    lastValue = currentValue;
+    isNewEnter = NO;
+    
+    self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
+    
+    
+}
+- (IBAction)invPushed:(id)sender {
+    
+    double currentValue = [self.textField.text doubleValue];
+    
+        currentValue = -1*currentValue;
+    
+    lastValue = currentValue;
+    isNewEnter = NO;
+    
+    self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
 }
 
 - (IBAction)signPushed:(id)sender {
@@ -67,13 +91,10 @@
     if (lastSign == 1004 && currentValue != 0) {
     currentValue =lastValue/currentValue;
     }
-    if (lastSign == 1010) {
-    currentValue = sqrt(currentValue);
-    }
-    if (lastSign == 1011) {
-    currentValue = - currentValue;
-    }
-    
+  //  if (lastSign == 1010) {
+   // currentValue = sqrt(currentValue);
+   // }
+
     
     lastValue = currentValue;
     lastSign = [sender tag];
