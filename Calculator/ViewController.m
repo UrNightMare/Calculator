@@ -22,10 +22,12 @@
 
 - (IBAction)digitPushedBy:(id) sender {
         if (isNewEnter) {
-        self.textField.text = @"" ;
+        self.textField.text = @"";
         isNewEnter = NO;
-    }
-    NSString* CurrentnumberAsString = [NSString stringWithFormat:@"%i", [sender tag]];
+        }
+    
+    
+    NSString* CurrentnumberAsString = [NSString stringWithFormat:@"%li", (long)[sender tag]];
     NSString* currentValue = self.textField.text;
     currentValue = [currentValue stringByAppendingString:CurrentnumberAsString];
     self.textField.text = currentValue;
@@ -43,7 +45,9 @@
     isNewEnter = YES;
     lastSign = 0;
     lastValue = 0;
+
 }
+
 - (IBAction)signPushed:(id)sender {
     if (isNewEnter && lastSign != 0) {
         return;
@@ -66,6 +70,10 @@
     if (lastSign == 1010) {
     currentValue = sqrt(currentValue);
     }
+    if (lastSign == 1011) {
+    currentValue = - currentValue;
+    }
+    
     
     lastValue = currentValue;
     lastSign = [sender tag];
