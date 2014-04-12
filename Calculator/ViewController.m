@@ -10,6 +10,7 @@
 
 @interface ViewController ()
 
+
 @end
 
 @implementation ViewController
@@ -46,6 +47,96 @@
     lastSign = 0;
     lastValue = 0;
 
+}
+-(IBAction)squarePushed:(id)sender {
+    double currentValue = [self.textField.text doubleValue];
+    
+    currentValue = currentValue*currentValue;
+    
+    isNewEnter = NO;
+    
+    self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
+}
+
+-(IBAction)cubePushed:(id)sender {
+    double currentValue = [self.textField.text doubleValue];
+    
+    currentValue = currentValue*currentValue*currentValue;
+    
+    isNewEnter = NO;
+    
+    self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
+}
+
+-(IBAction)pPushed:(id)sender {
+double currentValue = [self.textField.text doubleValue];
+
+    currentValue = 3.1415926535;
+
+isNewEnter = NO;
+
+self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
+}
+
+/*
+ -(IBAction)cosPushed:(id)sender {
+    double currentValue = [self.textField.text doubleValue];
+     
+    currentValue = currentValue*(M_PI/180);
+    
+    lastValue = currentValue;
+    isNewEnter = NO;
+    
+    self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
+    
+}
+
+-(IBAction)sinPushed:(id)sender {
+    double currentValue = [self.textField.text doubleValue];
+    
+    currentValue = sin(currentValue);
+    
+    lastValue = currentValue;
+    isNewEnter = NO;
+    
+    self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
+    
+}
+
+-(IBAction)tgPushed:(id)sender {
+    double currentValue = [self.textField.text doubleValue];
+    
+    currentValue = tan(currentValue);
+    
+    lastValue = currentValue;
+    isNewEnter = NO;
+    
+    self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
+    
+}
+*/
+-(IBAction)cbrtPushed:(id)sender {
+    double currentValue = [self.textField.text doubleValue];
+    
+    currentValue = cbrt(currentValue);
+    
+    lastValue = currentValue;
+    isNewEnter = NO;
+    
+    self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
+    
+}
+
+-(IBAction)percentPushed:(id)sender {
+    double currentValue = [self.textField.text doubleValue];
+    
+    currentValue = currentValue/100;
+    
+    lastValue = currentValue;
+    isNewEnter = NO;
+    
+    self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
+    
 }
 -(IBAction)sqrtPushed:(id)sender {
     double currentValue = [self.textField.text doubleValue];
@@ -102,6 +193,8 @@
     
     self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
 }
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
