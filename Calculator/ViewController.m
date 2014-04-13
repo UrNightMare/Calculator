@@ -17,21 +17,62 @@
 
 - (void)viewDidLoad
 {
+    [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(check) userInfo:nil repeats:YES];
     [super viewDidLoad];
 	isNewEnter = YES;
 }
+-(void)check {
+    if ([self.textField.text length] >= 25){
+        self.textField.text = [self.textField.text substringWithRange:NSMakeRange(0,24)];
+    }
+}
 
-- (IBAction)digitPushedBy:(id) sender {
-        if (isNewEnter) {
+- (IBAction)zeroPushed:(id)sender {
+    if (isNewEnter)
+    {
+        if ([self.textField.text length] < 2) {
         self.textField.text = @"";
         isNewEnter = NO;
         }
-    
+        if ([self.textField.text length] <= 2) {
+        self.textField.text = @"";
+            isNewEnter = YES;
+        }
+    }
     NSString* CurrentnumberAsString = [NSString stringWithFormat:@"%li", (long)[sender tag]];
     NSString* currentValue = self.textField.text;
     currentValue = [currentValue stringByAppendingString:CurrentnumberAsString];
     self.textField.text = currentValue;
+
 }
+ - (IBAction)digitPushedBy:(id) sender {
+     
+    if (isNewEnter)
+    {
+    self.textField.text = @"";
+    isNewEnter = NO;
+ }
+    NSString* CurrentnumberAsString = [NSString stringWithFormat:@"%li", (long)[sender tag]];
+    NSString* currentValue = self.textField.text;
+    currentValue = [currentValue stringByAppendingString:CurrentnumberAsString];
+    self.textField.text = currentValue;
+ }
+
+
+
+- (BOOL)textField:(UILabel *)aTextView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+         // "Length of existing text" - "Length of replaced text" + "Length of replacement text"
+         NSInteger newTextLength = [aTextView.text length] - range.length + [text length];
+         
+         if (newTextLength > 10) {
+             // don't allow change
+             return NO;
+         }
+         self.textField.text = [NSString stringWithFormat:@"%li", (long)newTextLength];
+         return YES;
+     }
+
+
 
 - (IBAction)pointPushed:(id)sender {
     NSRange range = [self.textField.text rangeOfString:@"."];
@@ -48,6 +89,29 @@
     lastValue = 0;
 
 }
+
+
+- (IBAction)RightSlideRecognizer:(id)sender
+{
+
+        NSString * current = self.textField.text;
+        NSString * new = [current substringToIndex:[current length] - 1];
+        if ([new length] > 0)
+        {
+            self.textField.text = new;
+        }
+        else
+        {
+            isNewEnter = NO;
+            self.textField.text = @" ";
+        }
+    
+}
+
+
+
+
+
 -(IBAction)squarePushed:(id)sender {
     double currentValue = [self.textField.text doubleValue];
     
@@ -67,54 +131,6 @@
     
     self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
 }
-
--(IBAction)pPushed:(id)sender {
-double currentValue = [self.textField.text doubleValue];
-
-    currentValue = 3.1415926535;
-
-isNewEnter = NO;
-
-self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
-}
-
-/*
- -(IBAction)cosPushed:(id)sender {
-    double currentValue = [self.textField.text doubleValue];
-     
-    currentValue = currentValue*(M_PI/180);
-    
-    lastValue = currentValue;
-    isNewEnter = NO;
-    
-    self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
-    
-}
-
--(IBAction)sinPushed:(id)sender {
-    double currentValue = [self.textField.text doubleValue];
-    
-    currentValue = sin(currentValue);
-    
-    lastValue = currentValue;
-    isNewEnter = NO;
-    
-    self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
-    
-}
-
--(IBAction)tgPushed:(id)sender {
-    double currentValue = [self.textField.text doubleValue];
-    
-    currentValue = tan(currentValue);
-    
-    lastValue = currentValue;
-    isNewEnter = NO;
-    
-    self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
-    
-}
-*/
 -(IBAction)cbrtPushed:(id)sender {
     double currentValue = [self.textField.text doubleValue];
     
@@ -200,5 +216,4 @@ self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 @end
