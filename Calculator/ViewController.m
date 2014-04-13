@@ -83,7 +83,7 @@
 }
 
 - (IBAction)clearPushed:(id)sender {
-    self.textField.text = @"";
+    self.textField.text = @"0";
     isNewEnter = YES;
     lastSign = 0;
     lastValue = 0;
@@ -149,7 +149,7 @@
     currentValue = currentValue/100;
     
     lastValue = currentValue;
-    isNewEnter = NO;
+    isNewEnter = YES;
     
     self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
     
@@ -161,7 +161,7 @@
     
     
     lastValue = currentValue;
-    isNewEnter = NO;
+    isNewEnter = YES;
     
     self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
     

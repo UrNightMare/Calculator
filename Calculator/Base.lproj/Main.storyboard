@@ -271,7 +271,7 @@
                                     <action selector="digitPushedBy:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kxq-aw-5wV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Axv-ko-8cW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Axv-ko-8cW">
                                 <rect key="frame" x="161" y="490" width="79" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.22117010879999999" green="0.47825672730000002" blue="0.72163982780000002" alpha="1" colorSpace="calibratedRGB"/>
