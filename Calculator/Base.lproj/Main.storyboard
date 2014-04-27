@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
+        <deployment version="1792" defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
@@ -8,27 +9,41 @@
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController autoresizesArchivedViewToFullSize="NO" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lld-iZ-Sep"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dtq-gX-BoT"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" textAlignment="right" minimumFontSize="22" clearButtonMode="whileEditing" id="SkK-8I-71X">
-                                <rect key="frame" x="0.0" y="0.0" width="319" height="162"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" text="0" textAlignment="right" minimumFontSize="22" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="SkK-8I-71X">
+                                <rect key="frame" x="-1" y="85" width="320" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1682676977" green="0.1682676977" blue="0.1682676977" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="59S-76-PbK"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="84" id="SKj-DE-khU"/>
+                                    <constraint firstAttribute="width" constant="320" id="VzW-Gj-3wI"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="nuW-va-50f"/>
+                                </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="100"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="69"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="xam-ZH-P8P" appends="YES" id="JwT-AL-Qen"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" tag="1003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="eZZ-AK-wkq">
-                                <rect key="frame" x="241" y="250" width="78" height="79"/>
+                            <button opaque="NO" tag="1003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZZ-AK-wkq">
+                                <rect key="frame" x="0.0" y="251" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81051473510000005" green="0.81142832679999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="hCV-Kh-wVk"/>
+                                    <constraint firstAttribute="height" constant="79" id="nP0-0t-SKm"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="X">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -38,22 +53,30 @@
                                     <action selector="signPushed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ScV-vZ-0gf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="8Bj-PW-kTB">
-                                <rect key="frame" x="241" y="170" width="78" height="79"/>
+                            <button opaque="NO" tag="1004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bj-PW-kTB">
+                                <rect key="frame" x="240" y="171" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81051473507469085" green="0.81142832680494814" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="0ix-jo-y6i"/>
+                                    <constraint firstAttribute="height" constant="79" id="1Oa-rG-W5y"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
-                                <state key="normal" title="/">
+                                <state key="normal" title="÷">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="signPushed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ag2-1d-BhD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="clV-g9-NX5">
-                                <rect key="frame" x="241" y="330" width="78" height="79"/>
+                            <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clV-g9-NX5">
+                                <rect key="frame" x="0.0" y="411" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81051473510000005" green="0.81142832679999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="mya-se-Zom"/>
+                                    <constraint firstAttribute="height" constant="79" id="xSa-aF-sq7"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="-">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -63,10 +86,14 @@
                                     <action selector="signPushed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2JB-f5-v2k"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="sR1-W9-GLh">
-                                <rect key="frame" x="241" y="410" width="78" height="79"/>
+                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sR1-W9-GLh">
+                                <rect key="frame" x="0.0" y="331" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81051473510000005" green="0.81142832679999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="PFw-Af-DxM"/>
+                                    <constraint firstAttribute="height" constant="79" id="ZcC-bn-MEY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="+">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -76,10 +103,14 @@
                                     <action selector="signPushed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kfH-Mf-knC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="8xA-WZ-tBw">
-                                <rect key="frame" x="161" y="330" width="79" height="79"/>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xA-WZ-tBw">
+                                <rect key="frame" x="240" y="331" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.22117010878861462" green="0.47825672733219449" blue="0.72163982780612246" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="aQb-6j-cdP"/>
+                                    <constraint firstAttribute="width" constant="79" id="hK1-Lp-4q4"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="6">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -89,10 +120,14 @@
                                     <action selector="digitPushedBy:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iaZ-dR-bSK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="863-em-MV9">
-                                <rect key="frame" x="161" y="250" width="79" height="79"/>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="863-em-MV9">
+                                <rect key="frame" x="240" y="251" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.22117010878861462" green="0.47825672733219449" blue="0.72163982780612246" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="g8U-zy-Lm8"/>
+                                    <constraint firstAttribute="height" constant="79" id="hHI-h5-QMw"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="9">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -102,10 +137,14 @@
                                     <action selector="digitPushedBy:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yb2-ke-HFL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="wZr-rQ-mvP">
-                                <rect key="frame" x="241" y="490" width="78" height="77"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZr-rQ-mvP">
+                                <rect key="frame" x="0.0" y="491" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81051473510000005" green="0.81142832679999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="Hpk-gc-mPX"/>
+                                    <constraint firstAttribute="width" constant="79" id="hiK-43-2UA"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="=">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -115,10 +154,14 @@
                                     <action selector="signPushed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7fN-rV-IJY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="z8l-ZU-vJb">
-                                <rect key="frame" x="81" y="330" width="79" height="79"/>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8l-ZU-vJb">
+                                <rect key="frame" x="160" y="331" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.22117010878861462" green="0.47825672733219449" blue="0.72163982780612246" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="Szx-5D-dQw"/>
+                                    <constraint firstAttribute="height" constant="79" id="vNy-Xa-KAw"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="5">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -128,10 +171,14 @@
                                     <action selector="digitPushedBy:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cqc-Ic-QUJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="3kg-hC-SgG">
-                                <rect key="frame" x="81" y="250" width="79" height="79"/>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kg-hC-SgG">
+                                <rect key="frame" x="160" y="251" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.22117010878861462" green="0.47825672733219449" blue="0.72163982780612246" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="NYy-Bj-FDW"/>
+                                    <constraint firstAttribute="height" constant="79" id="w6g-iB-hW8"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="8">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -141,10 +188,14 @@
                                     <action selector="digitPushedBy:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tgZ-Ab-s7W"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="ajN-ef-TpW">
-                                <rect key="frame" x="81" y="410" width="79" height="79"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajN-ef-TpW">
+                                <rect key="frame" x="160" y="411" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.22117010878861462" green="0.47825672733219449" blue="0.72163982780612246" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="jrZ-GA-QDx"/>
+                                    <constraint firstAttribute="height" constant="79" id="z0m-gh-UEs"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -154,10 +205,14 @@
                                     <action selector="digitPushedBy:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eZM-6Z-YSh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="R2e-GO-d3g">
-                                <rect key="frame" x="81" y="490" width="79" height="77"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2e-GO-d3g">
+                                <rect key="frame" x="160" y="491" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.22117010878861462" green="0.47825672733219449" blue="0.72163982780612246" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="9Gf-cs-Y1U"/>
+                                    <constraint firstAttribute="height" constant="79" id="TtO-Tp-DPA"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title=",">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -167,10 +222,14 @@
                                     <action selector="pointPushed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="a7b-KN-yyC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Ll6-mV-POY">
-                                <rect key="frame" x="1" y="330" width="79" height="79"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ll6-mV-POY">
+                                <rect key="frame" x="80" y="331" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.22117010878861462" green="0.47825672733219449" blue="0.72163982780612246" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="IWm-uu-JVm"/>
+                                    <constraint firstAttribute="height" constant="79" id="YbA-r3-odu"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="4">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -180,10 +239,14 @@
                                     <action selector="digitPushedBy:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ukf-QK-FES"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="LKu-3r-VgJ">
-                                <rect key="frame" x="1" y="250" width="79" height="79"/>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKu-3r-VgJ">
+                                <rect key="frame" x="80" y="251" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.22117010878861462" green="0.47825672733219449" blue="0.72163982780612246" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="2y0-Vq-ZQZ"/>
+                                    <constraint firstAttribute="width" constant="79" id="UKb-kb-v3O"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="7">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -193,23 +256,31 @@
                                     <action selector="digitPushedBy:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MxV-0V-3fP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="UZ4-qx-8al">
-                                <rect key="frame" x="1" y="490" width="79" height="77"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZ4-qx-8al">
+                                <rect key="frame" x="80" y="491" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.22117010878861462" green="0.47825672733219449" blue="0.72163982780612246" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="KVr-Mj-gYx"/>
+                                    <constraint firstAttribute="width" constant="79" id="fRd-8D-KZ3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="0">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="zeroPushed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hcL-Ba-x9a"/>
+                                    <action selector="zeroPushed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="27X-vj-Cgv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="3ni-dJ-o3w">
-                                <rect key="frame" x="1" y="170" width="79" height="79"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ni-dJ-o3w">
+                                <rect key="frame" x="0.0" y="171" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81051473507469085" green="0.81142832680494814" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="D8J-Ie-5WL"/>
+                                    <constraint firstAttribute="width" constant="79" id="YDF-1F-x3u"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="C">
@@ -219,10 +290,14 @@
                                     <action selector="clearPushed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3lG-zI-jeh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1010" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="IZQ-W9-o6c">
-                                <rect key="frame" x="81" y="170" width="79" height="79"/>
+                            <button opaque="NO" tag="1010" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZQ-W9-o6c">
+                                <rect key="frame" x="80" y="171" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81051473507469085" green="0.81142832680494814" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="78b-zI-jME"/>
+                                    <constraint firstAttribute="height" constant="79" id="vy4-V2-bNq"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="√">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -232,23 +307,14 @@
                                     <action selector="sqrtPushed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0RQ-Ld-iYq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1011" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="p6f-xs-GZR">
-                                <rect key="frame" x="161" y="170" width="79" height="79"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chy-xe-ZlO">
+                                <rect key="frame" x="80" y="411" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.81051473507469085" green="0.81142832680494814" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
-                                <state key="normal" title="+/-">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="invPushed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TpA-aR-wsn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="chy-xe-ZlO">
-                                <rect key="frame" x="1" y="410" width="79" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.22117010878861462" green="0.47825672733219449" blue="0.72163982780612246" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="9Ba-dJ-XAW"/>
+                                    <constraint firstAttribute="width" constant="79" id="Tay-h5-Jid"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -258,10 +324,14 @@
                                     <action selector="digitPushedBy:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8Hv-au-FXQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="lol-Fd-wr7">
-                                <rect key="frame" x="161" y="410" width="79" height="79"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lol-Fd-wr7">
+                                <rect key="frame" x="240" y="411" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.22117010878861462" green="0.47825672733219449" blue="0.72163982780612246" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="9p6-YK-rxC"/>
+                                    <constraint firstAttribute="width" constant="79" id="cHJ-C3-1uz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="3">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -271,10 +341,14 @@
                                     <action selector="digitPushedBy:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kxq-aw-5wV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Axv-ko-8cW">
-                                <rect key="frame" x="161" y="490" width="79" height="77"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axv-ko-8cW">
+                                <rect key="frame" x="240" y="491" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.22117010879999999" green="0.47825672730000002" blue="0.72163982780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="Pso-1m-uXX"/>
+                                    <constraint firstAttribute="height" constant="79" id="vqV-CE-hwp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
                                 <state key="normal" title="%">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -284,18 +358,83 @@
                                     <action selector="percentPushed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nW2-9L-mwK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="1010" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2D-8q-cLz">
+                                <rect key="frame" x="160" y="171" width="79" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.81051473510000005" green="0.81142832679999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="3mr-tL-N6h"/>
+                                    <constraint firstAttribute="height" constant="79" id="OFb-Gl-V45"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
+                                <state key="normal" title="+/-">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="invPushed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oTf-XH-kiN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1682676977" green="0.1682676977" blue="0.1682676977" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="UZ4-qx-8al" firstAttribute="top" secondItem="chy-xe-ZlO" secondAttribute="bottom" constant="1" id="0rd-wt-fMl"/>
+                            <constraint firstItem="eZZ-AK-wkq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="2V5-Ke-f7d"/>
+                            <constraint firstItem="clV-g9-NX5" firstAttribute="top" secondItem="sR1-W9-GLh" secondAttribute="bottom" constant="1" id="2oL-7z-ZLd"/>
+                            <constraint firstItem="LKu-3r-VgJ" firstAttribute="leading" secondItem="eZZ-AK-wkq" secondAttribute="trailing" constant="1" id="38H-NW-WC0"/>
+                            <constraint firstItem="863-em-MV9" firstAttribute="top" secondItem="8Bj-PW-kTB" secondAttribute="bottom" constant="1" id="3UR-bO-Ch3"/>
+                            <constraint firstItem="3ni-dJ-o3w" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="3vj-EE-Wmg"/>
+                            <constraint firstItem="sR1-W9-GLh" firstAttribute="top" secondItem="eZZ-AK-wkq" secondAttribute="bottom" constant="1" id="56K-9Y-mSU"/>
+                            <constraint firstAttribute="trailing" secondItem="863-em-MV9" secondAttribute="trailing" constant="1" id="5dG-bv-DP7"/>
+                            <constraint firstItem="wZr-rQ-mvP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="75z-Ge-EEG"/>
+                            <constraint firstItem="R2e-GO-d3g" firstAttribute="top" secondItem="ajN-ef-TpW" secondAttribute="bottom" constant="1" id="8Tu-sX-iuv"/>
+                            <constraint firstAttribute="bottom" secondItem="Axv-ko-8cW" secondAttribute="bottom" constant="-2" id="9D9-K7-ccv"/>
+                            <constraint firstItem="8xA-WZ-tBw" firstAttribute="leading" secondItem="z8l-ZU-vJb" secondAttribute="trailing" constant="1" id="AIb-si-JjI"/>
+                            <constraint firstItem="clV-g9-NX5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="AiJ-J2-eaF"/>
+                            <constraint firstItem="chy-xe-ZlO" firstAttribute="leading" secondItem="clV-g9-NX5" secondAttribute="trailing" constant="1" id="Asn-bB-nG6"/>
+                            <constraint firstItem="ajN-ef-TpW" firstAttribute="top" secondItem="z8l-ZU-vJb" secondAttribute="bottom" constant="1" id="BRp-fF-RTu"/>
+                            <constraint firstItem="R2e-GO-d3g" firstAttribute="leading" secondItem="UZ4-qx-8al" secondAttribute="trailing" constant="1" id="Fbk-dp-9YY"/>
+                            <constraint firstItem="3kg-hC-SgG" firstAttribute="leading" secondItem="LKu-3r-VgJ" secondAttribute="trailing" constant="1" id="G2l-oR-Kwp"/>
+                            <constraint firstAttribute="trailing" secondItem="8xA-WZ-tBw" secondAttribute="trailing" constant="1" id="GTH-9x-0yA"/>
+                            <constraint firstAttribute="trailing" secondItem="8Bj-PW-kTB" secondAttribute="trailing" constant="1" id="HwA-t4-0Xn"/>
+                            <constraint firstItem="lol-Fd-wr7" firstAttribute="top" secondItem="8xA-WZ-tBw" secondAttribute="bottom" constant="1" id="Jvr-CA-Rib"/>
+                            <constraint firstAttribute="bottom" secondItem="R2e-GO-d3g" secondAttribute="bottom" constant="-2" id="LFi-Uy-EWR"/>
+                            <constraint firstItem="Axv-ko-8cW" firstAttribute="top" secondItem="lol-Fd-wr7" secondAttribute="bottom" constant="1" id="LNY-Oh-boW"/>
+                            <constraint firstItem="LKu-3r-VgJ" firstAttribute="top" secondItem="IZQ-W9-o6c" secondAttribute="bottom" constant="1" id="M2D-jh-Xwk"/>
+                            <constraint firstItem="eZZ-AK-wkq" firstAttribute="top" secondItem="3ni-dJ-o3w" secondAttribute="bottom" constant="1" id="M6e-wM-oYd"/>
+                            <constraint firstAttribute="trailing" secondItem="lol-Fd-wr7" secondAttribute="trailing" constant="1" id="MQP-d1-9ch"/>
+                            <constraint firstItem="8xA-WZ-tBw" firstAttribute="top" secondItem="863-em-MV9" secondAttribute="bottom" constant="1" id="Oaz-Xu-VZ8"/>
+                            <constraint firstAttribute="trailing" secondItem="Axv-ko-8cW" secondAttribute="trailing" constant="1" id="QiP-4H-Vxd"/>
+                            <constraint firstItem="z8l-ZU-vJb" firstAttribute="leading" secondItem="Ll6-mV-POY" secondAttribute="trailing" constant="1" id="SrC-Yf-ph4"/>
+                            <constraint firstItem="863-em-MV9" firstAttribute="leading" secondItem="3kg-hC-SgG" secondAttribute="trailing" constant="1" id="T6x-yG-aaX"/>
+                            <constraint firstAttribute="bottom" secondItem="UZ4-qx-8al" secondAttribute="bottom" constant="-2" id="UiT-l6-RDR"/>
+                            <constraint firstItem="8Bj-PW-kTB" firstAttribute="leading" secondItem="Z2D-8q-cLz" secondAttribute="trailing" constant="1" id="W2p-Ep-Wmc"/>
+                            <constraint firstItem="Z2D-8q-cLz" firstAttribute="leading" secondItem="IZQ-W9-o6c" secondAttribute="trailing" constant="1" id="a4G-R5-Qf1"/>
+                            <constraint firstItem="Ll6-mV-POY" firstAttribute="top" secondItem="LKu-3r-VgJ" secondAttribute="bottom" constant="1" id="bXJ-g9-kBp"/>
+                            <constraint firstItem="wZr-rQ-mvP" firstAttribute="top" secondItem="clV-g9-NX5" secondAttribute="bottom" constant="1" id="dcy-rv-zq5"/>
+                            <constraint firstItem="lol-Fd-wr7" firstAttribute="leading" secondItem="ajN-ef-TpW" secondAttribute="trailing" constant="1" id="fI3-wO-2Ty"/>
+                            <constraint firstItem="sR1-W9-GLh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="fMv-Cv-rHZ"/>
+                            <constraint firstItem="chy-xe-ZlO" firstAttribute="top" secondItem="Ll6-mV-POY" secondAttribute="bottom" constant="1" id="frz-uf-Ejr"/>
+                            <constraint firstItem="Ll6-mV-POY" firstAttribute="leading" secondItem="sR1-W9-GLh" secondAttribute="trailing" constant="1" id="h2U-nz-tkI"/>
+                            <constraint firstItem="3kg-hC-SgG" firstAttribute="top" secondItem="Z2D-8q-cLz" secondAttribute="bottom" constant="1" id="iBW-fK-RXc"/>
+                            <constraint firstItem="SkK-8I-71X" firstAttribute="top" relation="lessThanOrEqual" secondItem="lld-iZ-Sep" secondAttribute="bottom" constant="65" id="iDw-sn-aEO"/>
+                            <constraint firstItem="UZ4-qx-8al" firstAttribute="leading" secondItem="wZr-rQ-mvP" secondAttribute="trailing" constant="1" id="lj5-tt-aDy"/>
+                            <constraint firstItem="ajN-ef-TpW" firstAttribute="leading" secondItem="chy-xe-ZlO" secondAttribute="trailing" constant="1" id="nT4-ZG-voh"/>
+                            <constraint firstItem="Z2D-8q-cLz" firstAttribute="top" secondItem="SkK-8I-71X" secondAttribute="bottom" constant="2" id="ntH-Pj-B8X"/>
+                            <constraint firstAttribute="bottom" secondItem="wZr-rQ-mvP" secondAttribute="bottom" constant="-2" id="raL-4s-HP4"/>
+                            <constraint firstItem="z8l-ZU-vJb" firstAttribute="top" secondItem="3kg-hC-SgG" secondAttribute="bottom" constant="1" id="thV-EY-PTb"/>
+                            <constraint firstItem="Axv-ko-8cW" firstAttribute="leading" secondItem="R2e-GO-d3g" secondAttribute="trailing" constant="1" id="wyz-HE-cYk"/>
+                            <constraint firstItem="IZQ-W9-o6c" firstAttribute="leading" secondItem="3ni-dJ-o3w" secondAttribute="trailing" constant="1" id="zCG-aH-Y3G"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="xam-ZH-P8P" appends="YES" id="SQk-Z8-jm9"/>
                         </connections>
                     </view>
                     <toolbarItems/>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <size key="freeformSize" width="318" height="568"/>
                     <connections>
                         <outlet property="textField" destination="SkK-8I-71X" id="GsY-no-jTW"/>
                     </connections>
@@ -307,12 +446,12 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="204" y="84"/>
+            <point key="canvasLocation" x="242" y="205"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
