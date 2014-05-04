@@ -30,19 +30,26 @@
 - (IBAction)zeroPushed:(id)sender {
     if (isNewEnter)
     {
+        NSString* CurrentnumberAsString = [NSString stringWithFormat:@"%li", (long)[sender tag]];
+        NSString* currentValue = self.textField.text;
+        currentValue = [currentValue stringByAppendingString:CurrentnumberAsString];
+        self.textField.text = currentValue;
+        
+        
         if ([self.textField.text length] > 2) {
             self.textField.text = @"";
-            isNewEnter = NO;
+            
         }
         if ([self.textField.text length] <=2 >0) {
-            self.textField.text = @"";
+            self.textField.text = 0;
             isNewEnter = YES;
         }
         if ([self.textField.text length] ==1) {
             self.textField.text = @"";
-            isNewEnter = NO;
+            
         }
-
+        
+        
     }
     NSString* CurrentnumberAsString = [NSString stringWithFormat:@"%li", (long)[sender tag]];
     NSString* currentValue = self.textField.text;
@@ -84,7 +91,7 @@
     
     if (range.location != NSNotFound) {
         return;
-
+        
     }
     if ([self.textField.text length] ==1) {
         isNewEnter = NO;
@@ -95,7 +102,7 @@
 }
 
 - (IBAction)clearPushed:(id)sender {
-    self.textField.text = @"";
+    self.textField.text = @"0";
     isNewEnter = YES;
     lastSign = 0;
     lastValue = 0;
