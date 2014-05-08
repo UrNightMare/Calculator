@@ -21,6 +21,8 @@
 		B963922B18C76DFB000570B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B963920D18C76DFB000570B2 /* UIKit.framework */; };
 		B963923318C76DFB000570B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B963923118C76DFB000570B2 /* InfoPlist.strings */; };
 		B963923518C76DFB000570B2 /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B963923418C76DFB000570B2 /* CalculatorTests.m */; };
+		B988E0B1191AB383004E0C2B /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B988E0B0191AB383004E0C2B /* iAd.framework */; };
+		B988E0B4191AB547004E0C2B /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B988E0B3191AB547004E0C2B /* InfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		B963923018C76DFB000570B2 /* CalcYouLaterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalcYouLaterTests-Info.plist"; sourceTree = "<group>"; };
 		B963923218C76DFB000570B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B963923418C76DFB000570B2 /* CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
+		B988E0B0191AB383004E0C2B /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		B988E0B2191AB547004E0C2B /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoViewController.h; path = ../InfoViewController.h; sourceTree = "<group>"; };
+		B988E0B3191AB547004E0C2B /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoViewController.m; path = ../InfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B988E0B1191AB383004E0C2B /* iAd.framework in Frameworks */,
 				B963920C18C76DFB000570B2 /* CoreGraphics.framework in Frameworks */,
 				B963920E18C76DFB000570B2 /* UIKit.framework in Frameworks */,
 				B963920A18C76DFB000570B2 /* Foundation.framework in Frameworks */,
@@ -102,6 +108,7 @@
 		B963920818C76DFB000570B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B988E0B0191AB383004E0C2B /* iAd.framework */,
 				B963920918C76DFB000570B2 /* Foundation.framework */,
 				B963920B18C76DFB000570B2 /* CoreGraphics.framework */,
 				B963920D18C76DFB000570B2 /* UIKit.framework */,
@@ -113,6 +120,8 @@
 		B963920F18C76DFB000570B2 /* SimpleCalc */ = {
 			isa = PBXGroup;
 			children = (
+				B988E0B2191AB547004E0C2B /* InfoViewController.h */,
+				B988E0B3191AB547004E0C2B /* InfoViewController.m */,
 				B963921818C76DFB000570B2 /* AppDelegate.h */,
 				B963921918C76DFB000570B2 /* AppDelegate.m */,
 				B963921B18C76DFB000570B2 /* Main.storyboard */,
@@ -199,7 +208,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Goga Industries";
+				ORGANIZATIONNAME = "George Sabanov";
 				TargetAttributes = {
 					B963920518C76DFB000570B2 = {
 						DevelopmentTeam = 36LYNA94EE;
@@ -261,6 +270,7 @@
 			files = (
 				B963922018C76DFB000570B2 /* ViewController.m in Sources */,
 				B963921A18C76DFB000570B2 /* AppDelegate.m in Sources */,
+				B988E0B4191AB547004E0C2B /* InfoViewController.m in Sources */,
 				B963921618C76DFB000570B2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "math.h"
-@interface ViewController : UIViewController {
+#import <iAd/iAd.h>
+@interface ViewController : UIViewController<ADBannerViewDelegate> {
     BOOL isNewEnter;
     double lastValue;
     NSInteger lastSign;

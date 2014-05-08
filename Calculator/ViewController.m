@@ -9,12 +9,20 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UIView *contentView;
 
 
 @end
 
 @implementation ViewController
-
+-(void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    [self.scrollView layoutIfNeeded];
+    
+    self.scrollView.contentSize = self.contentView.bounds.size;
+}
 - (void)viewDidLoad
 {
     [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(check) userInfo:nil repeats:YES];
@@ -158,7 +166,7 @@
     
     currentValue = currentValue*currentValue;
     
-    isNewEnter = NO;
+    isNewEnter = YES;
     
     self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
 }
@@ -168,7 +176,7 @@
     
     currentValue = currentValue*currentValue*currentValue;
     
-    isNewEnter = NO;
+    isNewEnter = YES;
     
     self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
 }
@@ -178,7 +186,7 @@
     currentValue = cbrt(currentValue);
     
     lastValue = currentValue;
-    isNewEnter = NO;
+    isNewEnter = YES;
     
     self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
     
@@ -208,6 +216,73 @@
     
     
 }
+
+
+-(IBAction)sinPushed:(id)sender{
+    
+    double currentValue = [self.textField.text doubleValue];
+    
+    currentValue = sin(currentValue*M_PI/180);
+    
+    
+    lastValue = currentValue;
+    isNewEnter = YES;
+    
+    self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
+    
+    
+}
+
+
+-(IBAction)tgPushed:(id)sender{
+    
+    float currentValue = [self.textField.text doubleValue];
+    
+    currentValue = tan(currentValue*M_PI/180);
+    
+    
+    lastValue = currentValue;
+    isNewEnter = YES;
+    
+    self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
+    
+    
+}
+
+-(IBAction)ctgPushed:(id)sender{
+    
+    float currentValue = [self.textField.text doubleValue];
+    
+    currentValue = cos(currentValue*M_PI/180)/sin(currentValue*M_PI/180);
+    
+    
+    lastValue = currentValue;
+    isNewEnter = YES;
+    
+    self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
+    
+    
+}
+
+
+-(IBAction)cosPushed:(id)sender{
+    
+    double currentValue = [self.textField.text doubleValue];
+    
+    currentValue = cos(currentValue*M_PI/180);
+    
+    
+    lastValue = currentValue;
+    isNewEnter = YES;
+    
+    self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
+    
+    
+}
+
+
+
+
 - (IBAction)invPushed:(id)sender {
     
     double currentValue = [self.textField.text doubleValue];
