@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9390402191CF4D4001AA8B0 /* Palka.png in Resources */ = {isa = PBXBuildFile; fileRef = B93903FE191CF4D4001AA8B0 /* Palka.png */; };
+		B9390405191CF4D4001AA8B0 /* Flappy_BackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = B9390401191CF4D4001AA8B0 /* Flappy_BackGround.png */; };
+		B939040A191CF6CA001AA8B0 /* MiniGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9390409191CF6CA001AA8B0 /* MiniGameViewController.m */; };
+		B939040E191CFBB5001AA8B0 /* Flappy+Birds+high+res+transparent+background+png+animated+(1).png in Resources */ = {isa = PBXBuildFile; fileRef = B939040D191CFBB5001AA8B0 /* Flappy+Birds+high+res+transparent+background+png+animated+(1).png */; };
+		B9390410191D2CBC001AA8B0 /* BackColor.png in Resources */ = {isa = PBXBuildFile; fileRef = B939040F191D2CBC001AA8B0 /* BackColor.png */; };
+		B9390412191D470D001AA8B0 /* Bird.png in Resources */ = {isa = PBXBuildFile; fileRef = B9390411191D470D001AA8B0 /* Bird.png */; };
+		B94AFC70191C117000FA2189 /* 3.5.png in Resources */ = {isa = PBXBuildFile; fileRef = B94AFC6E191C117000FA2189 /* 3.5.png */; };
+		B94AFC71191C117000FA2189 /* 4_inch.png in Resources */ = {isa = PBXBuildFile; fileRef = B94AFC6F191C117000FA2189 /* 4_inch.png */; };
 		B963920A18C76DFB000570B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B963920918C76DFB000570B2 /* Foundation.framework */; };
 		B963920C18C76DFB000570B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B963920B18C76DFB000570B2 /* CoreGraphics.framework */; };
 		B963920E18C76DFB000570B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B963920D18C76DFB000570B2 /* UIKit.framework */; };
@@ -36,6 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B93903FE191CF4D4001AA8B0 /* Palka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Palka.png; sourceTree = "<group>"; };
+		B9390401191CF4D4001AA8B0 /* Flappy_BackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flappy_BackGround.png; sourceTree = "<group>"; };
+		B9390408191CF6CA001AA8B0 /* MiniGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniGameViewController.h; sourceTree = "<group>"; };
+		B9390409191CF6CA001AA8B0 /* MiniGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiniGameViewController.m; sourceTree = "<group>"; };
+		B939040D191CFBB5001AA8B0 /* Flappy+Birds+high+res+transparent+background+png+animated+(1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Flappy+Birds+high+res+transparent+background+png+animated+(1).png"; sourceTree = "<group>"; };
+		B939040F191D2CBC001AA8B0 /* BackColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackColor.png; sourceTree = "<group>"; };
+		B9390411191D470D001AA8B0 /* Bird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bird.png; sourceTree = "<group>"; };
+		B94AFC6E191C117000FA2189 /* 3.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.5.png; sourceTree = "<group>"; };
+		B94AFC6F191C117000FA2189 /* 4_inch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4_inch.png; sourceTree = "<group>"; };
 		B963920618C76DFB000570B2 /* CalcYouLater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalcYouLater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B963920918C76DFB000570B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B963920B18C76DFB000570B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -125,6 +142,8 @@
 				B963921818C76DFB000570B2 /* AppDelegate.h */,
 				B963921918C76DFB000570B2 /* AppDelegate.m */,
 				B963921B18C76DFB000570B2 /* Main.storyboard */,
+				B9390408191CF6CA001AA8B0 /* MiniGameViewController.h */,
+				B9390409191CF6CA001AA8B0 /* MiniGameViewController.m */,
 				B963921E18C76DFB000570B2 /* ViewController.h */,
 				B963921F18C76DFB000570B2 /* ViewController.m */,
 				B963922118C76DFB000570B2 /* Images.xcassets */,
@@ -137,6 +156,13 @@
 		B963921018C76DFB000570B2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B9390411191D470D001AA8B0 /* Bird.png */,
+				B939040D191CFBB5001AA8B0 /* Flappy+Birds+high+res+transparent+background+png+animated+(1).png */,
+				B93903FE191CF4D4001AA8B0 /* Palka.png */,
+				B939040F191D2CBC001AA8B0 /* BackColor.png */,
+				B9390401191CF4D4001AA8B0 /* Flappy_BackGround.png */,
+				B94AFC6E191C117000FA2189 /* 3.5.png */,
+				B94AFC6F191C117000FA2189 /* 4_inch.png */,
 				B963921118C76DFB000570B2 /* CalcYouLater-Info.plist */,
 				B963921218C76DFB000570B2 /* InfoPlist.strings */,
 				B963921518C76DFB000570B2 /* main.m */,
@@ -247,9 +273,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B94AFC70191C117000FA2189 /* 3.5.png in Resources */,
+				B9390405191CF4D4001AA8B0 /* Flappy_BackGround.png in Resources */,
+				B9390412191D470D001AA8B0 /* Bird.png in Resources */,
 				B963922218C76DFB000570B2 /* Images.xcassets in Resources */,
+				B9390410191D2CBC001AA8B0 /* BackColor.png in Resources */,
+				B939040E191CFBB5001AA8B0 /* Flappy+Birds+high+res+transparent+background+png+animated+(1).png in Resources */,
 				B963921418C76DFB000570B2 /* InfoPlist.strings in Resources */,
+				B9390402191CF4D4001AA8B0 /* Palka.png in Resources */,
 				B963921D18C76DFB000570B2 /* Main.storyboard in Resources */,
+				B94AFC71191C117000FA2189 /* 4_inch.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B963922018C76DFB000570B2 /* ViewController.m in Sources */,
+				B939040A191CF6CA001AA8B0 /* MiniGameViewController.m in Sources */,
 				B963921A18C76DFB000570B2 /* AppDelegate.m in Sources */,
 				B988E0B4191AB547004E0C2B /* InfoViewController.m in Sources */,
 				B963921618C76DFB000570B2 /* main.m in Sources */,

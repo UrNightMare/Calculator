@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <iAd/iAd.h>
 
-@interface InfoViewController : UIViewController <ADBannerViewDelegate>
+NSInteger HighScoreNumber;
 
+@interface InfoViewController : UIViewController <ADBannerViewDelegate>
+{
+    IBOutlet UILabel *HighScore;
+}
 @end
