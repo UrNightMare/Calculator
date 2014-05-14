@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <iAd/iAd.h>
-
+#import "GADBannerView.h"
 NSInteger HighScoreNumber;
 
-@interface InfoViewController : UIViewController <ADBannerViewDelegate>
+@interface InfoViewController : UIViewController <ADBannerViewDelegate, GADBannerViewDelegate>
 {
     IBOutlet UILabel *HighScore;
+    GADBannerView *gbanner;
 }
+
 @end

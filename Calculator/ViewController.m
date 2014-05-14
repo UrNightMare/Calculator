@@ -30,8 +30,8 @@
 	isNewEnter = YES;
 }
 -(void)check {
-   if ([self.textField.text length] >= 12){
-       self.textField.text = [self.textField.text substringWithRange:NSMakeRange(0,11)];
+    if ([self.textField.text length] >= 12){
+        self.textField.text = [self.textField.text substringWithRange:NSMakeRange(0,11)];
     }
 }
 
@@ -114,23 +114,35 @@
     isNewEnter = YES;
     lastSign = 0;
     lastValue = 0;
-
+    
 }
-
+-(IBAction)xvstepeniy:(id)sender {
+    
+    double currentValue = [self.textField.text doubleValue];
+    
+    
+    currentValue = pow(lastValue, currentValue);
+    
+    
+    isNewEnter = YES;
+    
+    self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
+    
+}
 
 - (IBAction)RightSlideRecognizer:(id)sender
 {
-
-        NSString * current = self.textField.text;
-        NSString * new = [current substringToIndex:[current length] - 1];
-        if ([new length] > 0)
-        {
-            self.textField.text = new;
-        }
-        else        {
-            isNewEnter = YES;
-            self.textField.text = @"0";
-        }
+    
+    NSString * current = self.textField.text;
+    NSString * new = [current substringToIndex:[current length] - 1];
+    if ([new length] > 0)
+    {
+        self.textField.text = new;
+    }
+    else        {
+        isNewEnter = YES;
+        self.textField.text = @"0";
+    }
     if (current <= 0) {
         self.textField.text = @"0";
     }
@@ -138,25 +150,25 @@
 }
 
 /*
-- (IBAction)LeftSlideRecognizer:(id)sender
-{
-    NSString * current = self.textField.text;
-    NSString * new = [current substringToIndex:[current length] ];
-    if ([new length] > 0)
-    {
-        self.textField.text = new;
-    }
-    else
-    {
-        isNewEnter = YES;
-        self.textField.text = @"0";
-    }
-    
-}
-
-
-
-*/
+ - (IBAction)LeftSlideRecognizer:(id)sender
+ {
+ NSString * current = self.textField.text;
+ NSString * new = [current substringToIndex:[current length] ];
+ if ([new length] > 0)
+ {
+ self.textField.text = new;
+ }
+ else
+ {
+ isNewEnter = YES;
+ self.textField.text = @"0";
+ }
+ 
+ }
+ 
+ 
+ 
+ */
 
 
 
@@ -192,16 +204,40 @@
     
 }
 
--(IBAction)percentPushed:(id)sender {
+-(IBAction)percentPushedBy:(id)sender {
+    
     double currentValue = [self.textField.text doubleValue];
+    double preset = 100/currentValue;
+    if (lastValue == 0) {
+        currentValue =currentValue/100;
+    }
+    else {
+        if (lastSign == 1001){
+        currentValue = lastValue + lastValue/preset;
+        }
+        if (lastSign == 1002){
+            currentValue = lastValue - lastValue/preset;
+        }
+        if (lastSign== 1003) {
+            currentValue = lastValue*(lastValue/preset);
+        }
+        if(lastSign == 1004){
+            currentValue = lastValue/(lastValue/preset);
+        }
+        if(lastSign == 0) {
+            currentValue = lastValue/preset;
+        }
+    }
     
-    currentValue = currentValue/100;
     
+    lastSign = [sender tag];
     lastValue = currentValue;
     isNewEnter = YES;
     
     self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
+
     
+
 }
 -(IBAction)sqrtPushed:(id)sender {
     double currentValue = [self.textField.text doubleValue];
@@ -287,12 +323,16 @@
     
     double currentValue = [self.textField.text doubleValue];
     
-        currentValue = -1*currentValue;
-    
+    //currentValue = - currentValue;
+    currentValue = -1*currentValue;
     lastValue = currentValue;
     isNewEnter = NO;
-
+    if ([self.textField.text isEqualToString:@"0"]) {
         
+        isNewEnter = YES;
+        
+    }
+    
     
     self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
 }
@@ -305,21 +345,20 @@
     double currentValue = [self.textField.text doubleValue];
     
     if (lastSign == 1001)  {
-    currentValue = currentValue+lastValue;
+        currentValue = currentValue+lastValue;
     }
     if (lastSign == 1002) {
-    currentValue = lastValue-currentValue;
+        currentValue = lastValue-currentValue;
     }
     if (lastSign == 1003) {
-    currentValue = currentValue*lastValue;
+        currentValue = currentValue*lastValue;
     }
     if (lastSign == 1004 && currentValue != 0) {
-    currentValue =lastValue/currentValue;
+        currentValue =lastValue/currentValue;
     }
-  //  if (lastSign == 1010) {
-   // currentValue = sqrt(currentValue);
-   // }
-
+    if (lastSign == 1111) {
+        currentValue = pow(lastValue, currentValue);
+    }
     
     lastValue = currentValue;
     lastSign = [sender tag];

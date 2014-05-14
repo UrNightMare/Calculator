@@ -61,7 +61,7 @@
     Exit.hidden = NO;
     //tunnelTop.hidden = YES;
     //tunnelBottom.hidden = YES;
-   // Bird.hidden = YES;
+    Bird.hidden = YES;
     if (scoreNumber > HighScoreNumber) {
         
         [[NSUserDefaults standardUserDefaults] setInteger:scoreNumber forKey:@"HighScoreSaved"];
@@ -77,20 +77,17 @@
     scoreLabel.text = [NSString stringWithFormat:@"%i",scoreNumber];
     
 }
-
-
 -(BOOL)prefersStatusBarHidden {
     return YES;
 }
-    
 
 -(void)placeTunnels {
     
     randomTopTunnelPosition = arc4random() %350;
-    randomTopTunnelPosition = randomTopTunnelPosition -228;
+    randomTopTunnelPosition = randomTopTunnelPosition -190;
     randomBottomTunnelPosition = randomTopTunnelPosition +550;
     
-    tunnelTop.center = CGPointMake(340, randomTopTunnelPosition);
+    tunnelTop.center = CGPointMake(340, randomTopTunnelPosition );
     tunnelBottom.center = CGPointMake(340, randomBottomTunnelPosition);
     
 }
@@ -102,12 +99,12 @@
         birdFlight = -15;
     }
      Bird.center = CGPointMake(Bird.center.x, Bird.center.y - birdFlight);
-    //   if (birdFlight > 0) {
-    //      Bird.image = [UIImage imageNamed:@"NORM.png"];
-    //  }
-    //  if (birdFlight < 0) {
-    //   Bird.image = [UIImage imageNamed:@"PADAET.png"];
-    // }
+       if (birdFlight > 0) {
+          Bird.image = [UIImage imageNamed:@"Bird.png"];
+      }
+      if (birdFlight < 0) {
+       Bird.image = [UIImage imageNamed:@"Bird Fall.png"];
+     }
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {

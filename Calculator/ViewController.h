@@ -13,7 +13,6 @@
     BOOL isNewEnter;
     double lastValue;
     NSInteger lastSign;
-    IBOutlet UILabel *HightScore;
 }
 
 - (IBAction)RightSlideRecognizer:(id)sender;
