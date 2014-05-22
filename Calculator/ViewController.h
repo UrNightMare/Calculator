@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "math.h"
 #import <iAd/iAd.h>
+#import <AudioToolbox/AudioToolbox.h>
 @interface ViewController : UIViewController<ADBannerViewDelegate> {
     BOOL isNewEnter;
     double lastValue;
     NSInteger lastSign;
+    SystemSoundID PlaySoundID;
 }
 
 - (IBAction)RightSlideRecognizer:(id)sender;

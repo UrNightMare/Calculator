@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B901622C1923F22500189378 /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = B901621C1923F22500189378 /* AppIcon29x29.png */; };
+		B901622D1923F22500189378 /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B901621D1923F22500189378 /* AppIcon29x29@2x.png */; };
+		B901622E1923F22500189378 /* AppIcon40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = B901621E1923F22500189378 /* AppIcon40x40.png */; };
+		B901622F1923F22500189378 /* AppIcon40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B901621F1923F22500189378 /* AppIcon40x40@2x.png */; };
+		B90162301923F22500189378 /* AppIcon50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = B90162201923F22500189378 /* AppIcon50x50.png */; };
+		B90162311923F22500189378 /* AppIcon50x50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B90162211923F22500189378 /* AppIcon50x50@2x.png */; };
+		B90162321923F22500189378 /* AppIcon57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = B90162221923F22500189378 /* AppIcon57x57.png */; };
+		B90162331923F22500189378 /* AppIcon57x57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B90162231923F22500189378 /* AppIcon57x57@2x.png */; };
+		B90162341923F22500189378 /* AppIcon60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = B90162241923F22500189378 /* AppIcon60x60.png */; };
+		B90162351923F22500189378 /* AppIcon60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B90162251923F22500189378 /* AppIcon60x60@2x.png */; };
+		B90162361923F22500189378 /* AppIcon72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = B90162261923F22500189378 /* AppIcon72x72.png */; };
+		B90162371923F22500189378 /* AppIcon72x72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B90162271923F22500189378 /* AppIcon72x72@2x.png */; };
+		B90162381923F22500189378 /* AppIcon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = B90162281923F22500189378 /* AppIcon76x76.png */; };
+		B90162391923F22500189378 /* AppIcon76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B90162291923F22500189378 /* AppIcon76x76@2x.png */; };
+		B901623A1923F22500189378 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = B901622A1923F22500189378 /* iTunesArtwork.png */; };
+		B901623B1923F22500189378 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B901622B1923F22500189378 /* iTunesArtwork@2x.png */; };
 		B9390402191CF4D4001AA8B0 /* Palka.png in Resources */ = {isa = PBXBuildFile; fileRef = B93903FE191CF4D4001AA8B0 /* Palka.png */; };
 		B9390405191CF4D4001AA8B0 /* Flappy_BackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = B9390401191CF4D4001AA8B0 /* Flappy_BackGround.png */; };
 		B939040A191CF6CA001AA8B0 /* MiniGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9390409191CF6CA001AA8B0 /* MiniGameViewController.m */; };
@@ -40,6 +56,7 @@
 		B963923518C76DFB000570B2 /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B963923418C76DFB000570B2 /* CalculatorTests.m */; };
 		B988E0B1191AB383004E0C2B /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B988E0B0191AB383004E0C2B /* iAd.framework */; };
 		B988E0B4191AB547004E0C2B /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B988E0B3191AB547004E0C2B /* InfoViewController.m */; };
+		B9A14792192EA05A00F32A7F /* tap.wav in Resources */ = {isa = PBXBuildFile; fileRef = B9A14791192EA05A00F32A7F /* tap.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +70,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B901621C1923F22500189378 /* AppIcon29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon29x29.png; sourceTree = "<group>"; };
+		B901621D1923F22500189378 /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x.png"; sourceTree = "<group>"; };
+		B901621E1923F22500189378 /* AppIcon40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon40x40.png; sourceTree = "<group>"; };
+		B901621F1923F22500189378 /* AppIcon40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon40x40@2x.png"; sourceTree = "<group>"; };
+		B90162201923F22500189378 /* AppIcon50x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon50x50.png; sourceTree = "<group>"; };
+		B90162211923F22500189378 /* AppIcon50x50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon50x50@2x.png"; sourceTree = "<group>"; };
+		B90162221923F22500189378 /* AppIcon57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon57x57.png; sourceTree = "<group>"; };
+		B90162231923F22500189378 /* AppIcon57x57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon57x57@2x.png"; sourceTree = "<group>"; };
+		B90162241923F22500189378 /* AppIcon60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon60x60.png; sourceTree = "<group>"; };
+		B90162251923F22500189378 /* AppIcon60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon60x60@2x.png"; sourceTree = "<group>"; };
+		B90162261923F22500189378 /* AppIcon72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon72x72.png; sourceTree = "<group>"; };
+		B90162271923F22500189378 /* AppIcon72x72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon72x72@2x.png"; sourceTree = "<group>"; };
+		B90162281923F22500189378 /* AppIcon76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon76x76.png; sourceTree = "<group>"; };
+		B90162291923F22500189378 /* AppIcon76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon76x76@2x.png"; sourceTree = "<group>"; };
+		B901622A1923F22500189378 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		B901622B1923F22500189378 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		B93903FE191CF4D4001AA8B0 /* Palka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Palka.png; sourceTree = "<group>"; };
 		B9390401191CF4D4001AA8B0 /* Flappy_BackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flappy_BackGround.png; sourceTree = "<group>"; };
 		B9390408191CF6CA001AA8B0 /* MiniGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniGameViewController.h; sourceTree = "<group>"; };
@@ -105,6 +138,7 @@
 		B988E0B0191AB383004E0C2B /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		B988E0B2191AB547004E0C2B /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoViewController.h; path = ../InfoViewController.h; sourceTree = "<group>"; };
 		B988E0B3191AB547004E0C2B /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoViewController.m; path = ../InfoViewController.m; sourceTree = "<group>"; };
+		B9A14791192EA05A00F32A7F /* tap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tap.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +172,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B901621B1923F22500189378 /* App Icon [Rounded] */ = {
+			isa = PBXGroup;
+			children = (
+				B901621C1923F22500189378 /* AppIcon29x29.png */,
+				B901621D1923F22500189378 /* AppIcon29x29@2x.png */,
+				B901621E1923F22500189378 /* AppIcon40x40.png */,
+				B901621F1923F22500189378 /* AppIcon40x40@2x.png */,
+				B90162211923F22500189378 /* AppIcon50x50@2x.png */,
+				B90162201923F22500189378 /* AppIcon50x50.png */,
+				B90162221923F22500189378 /* AppIcon57x57.png */,
+				B90162231923F22500189378 /* AppIcon57x57@2x.png */,
+				B90162241923F22500189378 /* AppIcon60x60.png */,
+				B90162251923F22500189378 /* AppIcon60x60@2x.png */,
+				B90162261923F22500189378 /* AppIcon72x72.png */,
+				B90162271923F22500189378 /* AppIcon72x72@2x.png */,
+				B90162281923F22500189378 /* AppIcon76x76.png */,
+				B90162291923F22500189378 /* AppIcon76x76@2x.png */,
+				B901622A1923F22500189378 /* iTunesArtwork.png */,
+				B901622B1923F22500189378 /* iTunesArtwork@2x.png */,
+			);
+			path = "App Icon [Rounded]";
+			sourceTree = "<group>";
+		};
 		B96391FD18C76DFB000570B2 = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +254,8 @@
 		B963921018C76DFB000570B2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B9A14791192EA05A00F32A7F /* tap.wav */,
+				B901621B1923F22500189378 /* App Icon [Rounded] */,
 				B9390411191D470D001AA8B0 /* Bird.png */,
 				B95B5491191F62E900C22990 /* Bird Fall.png */,
 				B939040D191CFBB5001AA8B0 /* Flappy+Birds+high+res+transparent+background+png+animated+(1).png */,
@@ -334,18 +393,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				B94AFC70191C117000FA2189 /* 3.5.png in Resources */,
+				B901622D1923F22500189378 /* AppIcon29x29@2x.png in Resources */,
 				B9390405191CF4D4001AA8B0 /* Flappy_BackGround.png in Resources */,
+				B90162381923F22500189378 /* AppIcon76x76.png in Resources */,
+				B90162331923F22500189378 /* AppIcon57x57@2x.png in Resources */,
+				B901622F1923F22500189378 /* AppIcon40x40@2x.png in Resources */,
 				B9390412191D470D001AA8B0 /* Bird.png in Resources */,
 				B93F2B0C19239173008E3F14 /* README.txt in Resources */,
+				B90162361923F22500189378 /* AppIcon72x72.png in Resources */,
 				B963922218C76DFB000570B2 /* Images.xcassets in Resources */,
+				B901623A1923F22500189378 /* iTunesArtwork.png in Resources */,
 				B9390410191D2CBC001AA8B0 /* BackColor.png in Resources */,
+				B90162311923F22500189378 /* AppIcon50x50@2x.png in Resources */,
+				B9A14792192EA05A00F32A7F /* tap.wav in Resources */,
 				B939040E191CFBB5001AA8B0 /* Flappy+Birds+high+res+transparent+background+png+animated+(1).png in Resources */,
 				B939041A191E0C37001AA8B0 /* BackGround.png in Resources */,
+				B90162391923F22500189378 /* AppIcon76x76@2x.png in Resources */,
+				B90162351923F22500189378 /* AppIcon60x60@2x.png in Resources */,
 				B963921418C76DFB000570B2 /* InfoPlist.strings in Resources */,
 				B95B5492191F62E900C22990 /* Bird Fall.png in Resources */,
+				B901623B1923F22500189378 /* iTunesArtwork@2x.png in Resources */,
 				B9390402191CF4D4001AA8B0 /* Palka.png in Resources */,
+				B901622C1923F22500189378 /* AppIcon29x29.png in Resources */,
+				B901622E1923F22500189378 /* AppIcon40x40.png in Resources */,
+				B90162371923F22500189378 /* AppIcon72x72@2x.png in Resources */,
 				B963921D18C76DFB000570B2 /* Main.storyboard in Resources */,
+				B90162321923F22500189378 /* AppIcon57x57.png in Resources */,
 				B94AFC71191C117000FA2189 /* 4_inch.png in Resources */,
+				B90162301923F22500189378 /* AppIcon50x50.png in Resources */,
+				B90162341923F22500189378 /* AppIcon60x60.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,15 +574,15 @@
 					armv7,
 					arm64,
 				);
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: George Sabanov (FS6HGALNV8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: George Sabanov (FS6HGALNV8)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Calculator/CalcYouLater-Prefix.pch";
 				GENERATE_PROFILING_CODE = YES;
 				INFOPLIST_FILE = "Calculator/CalcYouLater-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Calculator",
@@ -529,16 +605,16 @@
 					armv7,
 					arm64,
 				);
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer: George Sabanov (FS6HGALNV8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: George Sabanov (FS6HGALNV8)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Calculator/CalcYouLater-Prefix.pch";
 				GENERATE_PROFILING_CODE = YES;
 				INFOPLIST_FILE = "Calculator/CalcYouLater-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Calculator",

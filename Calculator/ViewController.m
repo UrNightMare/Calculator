@@ -25,6 +25,9 @@
 }
 - (void)viewDidLoad
 {
+    
+    NSURL *soundURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"tap" ofType:@"wav"]];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &PlaySoundID);
     [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(check) userInfo:nil repeats:YES];
     [super viewDidLoad];
 	isNewEnter = YES;
@@ -33,7 +36,12 @@
     if ([self.textField.text length] >= 12){
         self.textField.text = [self.textField.text substringWithRange:NSMakeRange(0,11)];
     }
+    
 }
+
+
+
+
 
 - (IBAction)zeroPushed:(id)sender {
     if (isNewEnter)
@@ -59,6 +67,7 @@
         
         
     }
+    AudioServicesPlaySystemSound(PlaySoundID);
     NSString* CurrentnumberAsString = [NSString stringWithFormat:@"%li", (long)[sender tag]];
     NSString* currentValue = self.textField.text;
     currentValue = [currentValue stringByAppendingString:CurrentnumberAsString];
@@ -76,6 +85,7 @@
     NSString* currentValue = self.textField.text;
     currentValue = [currentValue stringByAppendingString:CurrentnumberAsString];
     self.textField.text = currentValue;
+     AudioServicesPlaySystemSound(PlaySoundID);
 }
 
 
@@ -106,7 +116,7 @@
     }
     
     self.textField.text = [self.textField.text stringByAppendingString:@"."];
-    
+     AudioServicesPlaySystemSound(PlaySoundID);
 }
 
 - (IBAction)clearPushed:(id)sender {
@@ -114,6 +124,7 @@
     isNewEnter = YES;
     lastSign = 0;
     lastValue = 0;
+     AudioServicesPlaySystemSound(PlaySoundID);
     
 }
 -(IBAction)xvstepeniy:(id)sender {
@@ -127,8 +138,10 @@
     isNewEnter = YES;
     
     self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
-    
+     AudioServicesPlaySystemSound(PlaySoundID);
 }
+
+
 
 - (IBAction)RightSlideRecognizer:(id)sender
 {
@@ -181,11 +194,12 @@
     isNewEnter = YES;
     
     self.textField.text = [[NSNumber numberWithDouble:currentValue] stringValue];
+     AudioServicesPlaySystemSound(PlaySoundID);
 }
 
 -(IBAction)cubePushed:(id)sender {
     double currentValue = [self.textField.text doubleValue];
-    
+     AudioServicesPlaySystemSound(PlaySoundID);
     currentValue = currentValue*currentValue*currentValue;
     
     isNewEnter = YES;
@@ -194,7 +208,7 @@
 }
 -(IBAction)cbrtPushed:(id)sender {
     double currentValue = [self.textField.text doubleValue];
-    
+     AudioServicesPlaySystemSound(PlaySoundID);
     currentValue = cbrt(currentValue);
     
     lastValue = currentValue;
@@ -205,7 +219,7 @@
 }
 
 -(IBAction)percentPushedBy:(id)sender {
-    
+     AudioServicesPlaySystemSound(PlaySoundID);
     double currentValue = [self.textField.text doubleValue];
     double preset = 100/currentValue;
     if (lastValue == 0) {
@@ -241,7 +255,7 @@
 }
 -(IBAction)sqrtPushed:(id)sender {
     double currentValue = [self.textField.text doubleValue];
-    
+     AudioServicesPlaySystemSound(PlaySoundID);
     currentValue = sqrt(currentValue);
     
     
@@ -255,7 +269,7 @@
 
 
 -(IBAction)sinPushed:(id)sender{
-    
+     AudioServicesPlaySystemSound(PlaySoundID);
     double currentValue = [self.textField.text doubleValue];
     
     currentValue = sin(currentValue*M_PI/180);
@@ -271,7 +285,7 @@
 
 
 -(IBAction)tgPushed:(id)sender{
-    
+     AudioServicesPlaySystemSound(PlaySoundID);
     float currentValue = [self.textField.text doubleValue];
     
     currentValue = tan(currentValue*M_PI/180);
@@ -286,7 +300,7 @@
 }
 
 -(IBAction)ctgPushed:(id)sender{
-    
+     AudioServicesPlaySystemSound(PlaySoundID);
     float currentValue = [self.textField.text doubleValue];
     
     currentValue = cos(currentValue*M_PI/180)/sin(currentValue*M_PI/180);
@@ -302,7 +316,7 @@
 
 
 -(IBAction)cosPushed:(id)sender{
-    
+     AudioServicesPlaySystemSound(PlaySoundID);
     double currentValue = [self.textField.text doubleValue];
     
     currentValue = cos(currentValue*M_PI/180);
@@ -320,7 +334,7 @@
 
 
 - (IBAction)invPushed:(id)sender {
-    
+     AudioServicesPlaySystemSound(PlaySoundID);
     double currentValue = [self.textField.text doubleValue];
     
     //currentValue = - currentValue;
@@ -341,7 +355,7 @@
     if (isNewEnter && lastSign != 0) {
         return;
     }
-    
+     AudioServicesPlaySystemSound(PlaySoundID);
     double currentValue = [self.textField.text doubleValue];
     
     if (lastSign == 1001)  {
