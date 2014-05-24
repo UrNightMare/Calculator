@@ -15,6 +15,7 @@ NSInteger HighScoreNumber;
 {
     IBOutlet UILabel *HighScore;
     GADBannerView *gbanner;
+    ADBannerView *banner;
 }
 
 @end

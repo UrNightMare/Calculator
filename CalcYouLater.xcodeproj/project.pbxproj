@@ -57,6 +57,9 @@
 		B988E0B1191AB383004E0C2B /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B988E0B0191AB383004E0C2B /* iAd.framework */; };
 		B988E0B4191AB547004E0C2B /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B988E0B3191AB547004E0C2B /* InfoViewController.m */; };
 		B9A14792192EA05A00F32A7F /* tap.wav in Resources */ = {isa = PBXBuildFile; fileRef = B9A14791192EA05A00F32A7F /* tap.wav */; };
+		B9BCB8231931144B00A323AD /* Ios6R1LIm.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BCB8221931144B00A323AD /* Ios6R1LIm.png */; };
+		B9BCB8261931145B00A323AD /* 3.5_1.3.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BCB8241931145B00A323AD /* 3.5_1.3.png */; };
+		B9BCB8271931145B00A323AD /* 4_inch_1.3.png in Resources */ = {isa = PBXBuildFile; fileRef = B9BCB8251931145B00A323AD /* 4_inch_1.3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +142,9 @@
 		B988E0B2191AB547004E0C2B /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoViewController.h; path = ../InfoViewController.h; sourceTree = "<group>"; };
 		B988E0B3191AB547004E0C2B /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoViewController.m; path = ../InfoViewController.m; sourceTree = "<group>"; };
 		B9A14791192EA05A00F32A7F /* tap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tap.wav; sourceTree = "<group>"; };
+		B9BCB8221931144B00A323AD /* Ios6R1LIm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ios6R1LIm.png; sourceTree = "<group>"; };
+		B9BCB8241931145B00A323AD /* 3.5_1.3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.5_1.3.png; sourceTree = "<group>"; };
+		B9BCB8251931145B00A323AD /* 4_inch_1.3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4_inch_1.3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +181,8 @@
 		B901621B1923F22500189378 /* App Icon [Rounded] */ = {
 			isa = PBXGroup;
 			children = (
+				B9BCB8241931145B00A323AD /* 3.5_1.3.png */,
+				B9BCB8251931145B00A323AD /* 4_inch_1.3.png */,
 				B901621C1923F22500189378 /* AppIcon29x29.png */,
 				B901621D1923F22500189378 /* AppIcon29x29@2x.png */,
 				B901621E1923F22500189378 /* AppIcon40x40.png */,
@@ -254,6 +262,7 @@
 		B963921018C76DFB000570B2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B9BCB8221931144B00A323AD /* Ios6R1LIm.png */,
 				B9A14791192EA05A00F32A7F /* tap.wav */,
 				B901621B1923F22500189378 /* App Icon [Rounded] */,
 				B9390411191D470D001AA8B0 /* Bird.png */,
@@ -396,8 +405,11 @@
 				B901622D1923F22500189378 /* AppIcon29x29@2x.png in Resources */,
 				B9390405191CF4D4001AA8B0 /* Flappy_BackGround.png in Resources */,
 				B90162381923F22500189378 /* AppIcon76x76.png in Resources */,
+				B9BCB8271931145B00A323AD /* 4_inch_1.3.png in Resources */,
 				B90162331923F22500189378 /* AppIcon57x57@2x.png in Resources */,
+				B9BCB8261931145B00A323AD /* 3.5_1.3.png in Resources */,
 				B901622F1923F22500189378 /* AppIcon40x40@2x.png in Resources */,
+				B9BCB8231931144B00A323AD /* Ios6R1LIm.png in Resources */,
 				B9390412191D470D001AA8B0 /* Bird.png in Resources */,
 				B93F2B0C19239173008E3F14 /* README.txt in Resources */,
 				B90162361923F22500189378 /* AppIcon72x72.png in Resources */,

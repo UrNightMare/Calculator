@@ -33,62 +33,30 @@
     HighScore.text = [NSString stringWithFormat: @"High Score: %li", (long)HighScoreNumber];
     
     [super viewDidLoad];
-    float y = [UIScreen mainScreen].bounds.size.height - [UIApplication sharedApplication].statusBarFrame.size.height - gbanner.frame.size.height - 30;
+   // float y = [UIScreen mainScreen].bounds.size.height - [UIApplication sharedApplication].statusBarFrame.size.height - gbanner.frame.size.height - 30;
 
-    gbanner = [[GADBannerView alloc] initWithFrame:CGRectMake(0,y, 320, 50)];
+   // gbanner = [[GADBannerView alloc] initWithFrame:CGRectMake(0,y, 320, 50)];
     
-    gbanner.adUnitID= @"ca-app-pub-4048704989491181/6671544752";
+   // gbanner.adUnitID= @"ca-app-pub-4048704989491181/6671544752";
    
-    gbanner.rootViewController = self;
-    [self.view addSubview:gbanner];
-    [gbanner loadRequest:[GADRequest request]];
+   // gbanner.rootViewController = self;
+   // [self.view addSubview:gbanner];
+   // [gbanner loadRequest:[GADRequest request]];
     
 }
-- (void)adView:(GADBannerView *)view didFailToReceiveAdWithError:(GADRequestError *)error {
-    [self.gbanner removeFromSuperview];
-}
+//- (void)adView:(GADBannerView *)view didFailToReceiveAdWithError:(GADRequestError *)error {
+//    [self.gbanner removeFromSuperview];
+//}
 - (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
-    
-    // 1
-    [self.banner removeFromSuperview];
-    banner.hidden = YES;
-    
-    // 2
-    float y = [UIScreen mainScreen].bounds.size.height - [UIApplication sharedApplication].statusBarFrame.size.height - gbanner.frame.size.height;
-    
-    
-    gbanner = [[GADBannerView alloc]
-                        initWithFrame:CGRectMake(0,y,
-                                                 GAD_SIZE_320x50.width,
-                                                 GAD_SIZE_320x50.height)];
-    
-    // 3
-    self.gbanner.adUnitID = @"ca-app-pub-4048704989491181/6671544752";
-    self.gbanner.rootViewController = self;
-    self.gbanner.delegate = self;
-    
-    // 4
-    [self.view addSubview:self.gbanner];
-    [self.gbanner loadRequest:[GADRequest request]];
-    
-    GADRequest *request = [GADRequest request];
-    
-    // Make the request for a test ad. Put in an identifier for
-    // the simulator as well as any devices you want to receive test ads.
-    request.testDevices = @[ GAD_SIMULATOR_ID ];;
-    [gbanner loadRequest:request];
-    
-    
-    
-
-  /*  [UIView beginAnimations:nil context:nil];
+ 
+    [UIView beginAnimations:nil context:nil];
     
     [UIView setAnimationDuration:1];
     
     [banner setAlpha:0];
     
     [UIView commitAnimations];
-   */
+   
 }
 
 
