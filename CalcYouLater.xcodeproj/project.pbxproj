@@ -23,6 +23,16 @@
 		B90162391923F22500189378 /* AppIcon76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B90162291923F22500189378 /* AppIcon76x76@2x.png */; };
 		B901623A1923F22500189378 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = B901622A1923F22500189378 /* iTunesArtwork.png */; };
 		B901623B1923F22500189378 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B901622B1923F22500189378 /* iTunesArtwork@2x.png */; };
+		B91E5ACC193A213000E8299C /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91E5ACB193A213000E8299C /* AdColony.framework */; };
+		B91E5ACE193A222C00E8299C /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B91E5ACD193A222C00E8299C /* libz.1.2.5.dylib */; };
+		B91E5AD0193A22E200E8299C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91E5ACF193A22E200E8299C /* CoreMedia.framework */; };
+		B91E5AD2193A22F800E8299C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91E5AD1193A22F800E8299C /* CoreTelephony.framework */; };
+		B91E5AD5193A230600E8299C /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91E5AD3193A230600E8299C /* EventKit.framework */; };
+		B91E5AD6193A230600E8299C /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91E5AD4193A230600E8299C /* EventKitUI.framework */; };
+		B91E5AD8193A230D00E8299C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91E5AD7193A230D00E8299C /* MediaPlayer.framework */; };
+		B91E5ADA193A232C00E8299C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91E5AD9193A232C00E8299C /* QuartzCore.framework */; };
+		B91E5ADC193A233200E8299C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91E5ADB193A233200E8299C /* Social.framework */; };
+		B91E5ADE193A250400E8299C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91E5ADD193A250400E8299C /* StoreKit.framework */; };
 		B9390402191CF4D4001AA8B0 /* Palka.png in Resources */ = {isa = PBXBuildFile; fileRef = B93903FE191CF4D4001AA8B0 /* Palka.png */; };
 		B9390405191CF4D4001AA8B0 /* Flappy_BackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = B9390401191CF4D4001AA8B0 /* Flappy_BackGround.png */; };
 		B939040A191CF6CA001AA8B0 /* MiniGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9390409191CF6CA001AA8B0 /* MiniGameViewController.m */; };
@@ -89,6 +99,16 @@
 		B90162291923F22500189378 /* AppIcon76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon76x76@2x.png"; sourceTree = "<group>"; };
 		B901622A1923F22500189378 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		B901622B1923F22500189378 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		B91E5ACB193A213000E8299C /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdColony.framework; sourceTree = "<group>"; };
+		B91E5ACD193A222C00E8299C /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		B91E5ACF193A22E200E8299C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B91E5AD1193A22F800E8299C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B91E5AD3193A230600E8299C /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		B91E5AD4193A230600E8299C /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		B91E5AD7193A230D00E8299C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		B91E5AD9193A232C00E8299C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B91E5ADB193A233200E8299C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		B91E5ADD193A250400E8299C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		B93903FE191CF4D4001AA8B0 /* Palka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Palka.png; sourceTree = "<group>"; };
 		B9390401191CF4D4001AA8B0 /* Flappy_BackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flappy_BackGround.png; sourceTree = "<group>"; };
 		B9390408191CF6CA001AA8B0 /* MiniGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniGameViewController.h; sourceTree = "<group>"; };
@@ -152,9 +172,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B93F2B1819239227008E3F14 /* SystemConfiguration.framework in Frameworks */,
+				B91E5ADE193A250400E8299C /* StoreKit.framework in Frameworks */,
+				B91E5ADC193A233200E8299C /* Social.framework in Frameworks */,
+				B91E5ADA193A232C00E8299C /* QuartzCore.framework in Frameworks */,
 				B93F2B1419239215008E3F14 /* MessageUI.framework in Frameworks */,
+				B91E5AD8193A230D00E8299C /* MediaPlayer.framework in Frameworks */,
+				B91E5AD5193A230600E8299C /* EventKit.framework in Frameworks */,
+				B91E5AD6193A230600E8299C /* EventKitUI.framework in Frameworks */,
+				B91E5AD2193A22F800E8299C /* CoreTelephony.framework in Frameworks */,
 				B963920C18C76DFB000570B2 /* CoreGraphics.framework in Frameworks */,
+				B91E5AD0193A22E200E8299C /* CoreMedia.framework in Frameworks */,
+				B91E5ACE193A222C00E8299C /* libz.1.2.5.dylib in Frameworks */,
+				B93F2B1819239227008E3F14 /* SystemConfiguration.framework in Frameworks */,
+				B91E5ACC193A213000E8299C /* AdColony.framework in Frameworks */,
 				B93F2B12192391FE008E3F14 /* AVFoundation.framework in Frameworks */,
 				B93F2B10192391BB008E3F14 /* AudioToolbox.framework in Frameworks */,
 				B93F2B0E192391AD008E3F14 /* AdSupport.framework in Frameworks */,
@@ -226,6 +256,16 @@
 		B963920818C76DFB000570B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B91E5ADD193A250400E8299C /* StoreKit.framework */,
+				B91E5ADB193A233200E8299C /* Social.framework */,
+				B91E5AD9193A232C00E8299C /* QuartzCore.framework */,
+				B91E5AD7193A230D00E8299C /* MediaPlayer.framework */,
+				B91E5AD3193A230600E8299C /* EventKit.framework */,
+				B91E5AD4193A230600E8299C /* EventKitUI.framework */,
+				B91E5AD1193A22F800E8299C /* CoreTelephony.framework */,
+				B91E5ACF193A22E200E8299C /* CoreMedia.framework */,
+				B91E5ACD193A222C00E8299C /* libz.1.2.5.dylib */,
+				B91E5ACB193A213000E8299C /* AdColony.framework */,
 				B93F2B1719239226008E3F14 /* SystemConfiguration.framework */,
 				B93F2B1319239215008E3F14 /* MessageUI.framework */,
 				B93F2B11192391FE008E3F14 /* AVFoundation.framework */,
@@ -590,6 +630,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Calculator/CalcYouLater-Prefix.pch";
 				GENERATE_PROFILING_CODE = YES;
@@ -599,7 +643,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Calculator",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-fobjc-arc",
+				);
 				PRODUCT_NAME = CalcYouLater;
 				PROVISIONING_PROFILE = "9AAAC10D-6CEB-45A9-B90B-085C3D5892E2";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -622,6 +669,10 @@
 				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Calculator/CalcYouLater-Prefix.pch";
 				GENERATE_PROFILING_CODE = YES;
@@ -631,7 +682,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Calculator",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-fobjc-arc",
+				);
 				PRODUCT_NAME = CalcYouLater;
 				PROVISIONING_PROFILE = "9AAAC10D-6CEB-45A9-B90B-085C3D5892E2";
 				TARGETED_DEVICE_FAMILY = 1;

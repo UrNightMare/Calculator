@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+//#import <AdColony/AdColony.h>
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

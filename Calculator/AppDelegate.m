@@ -13,6 +13,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+ //   [AdColony configureWithAppID:@"appe13c44d2a9f64d59a7" zoneIDs:@[@"vzff350013fedd4424be"] delegate:nil logging:YES];
+
     return YES;
 }
 							

@@ -62,6 +62,7 @@
     //tunnelTop.hidden = YES;
     //tunnelBottom.hidden = YES;
     Bird.hidden = YES;
+//    [AdColony playVideoAdForZone:@"vzff350013fedd4424be" withDelegate:nil];
     if (scoreNumber > HighScoreNumber) {
         
         [[NSUserDefaults standardUserDefaults] setInteger:scoreNumber forKey:@"HighScoreSaved"];
